@@ -1,0 +1,23 @@
+# data: downloaded and generated files are never committed (rebuild with scripts/)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+# data/inputs/ IS committed: small hand-written assumptions (e.g. forward prices)
+
+# python
+__pycache__/
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# os / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
+
+# generated charts are committed so the README can show them
